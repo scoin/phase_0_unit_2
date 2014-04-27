@@ -35,16 +35,18 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  # Your code here!
+  source.map! do |x| x.to_s end
+  source.uniq.sort
 end
 
 def my_hash_sorting_method(source)
-  # Your code here!
+  source = source.sort_by { |key, value| value }
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
+# In the array sort, I first used .map to convert the fixnums to strings, as they cannot be compared. Then I used .sort of .uniq,
+# as the driver code wanted it this way.
+# For sorting the hash, I simply sorted by value which is age in this case.
 #
 
 
@@ -66,7 +68,6 @@ end
 ################## DRIVER CODE ###################################
 # HINT: Use `puts` statements to see if you are altering the original structure with these methods. 
 # Each of these should return `true` if they are implemented properly.
-
 p my_array_finding_method(i_want_pets, "t") == ["want","pets","but"]
 p my_hash_finding_method(my_family_pets_ages, 3) == ["Hoobie", "Ditto"]
 p my_array_modification_method(i_want_pets, 1) == ["I", "want", 4, "pets", "but", "I", "only", "have", 3 ]
