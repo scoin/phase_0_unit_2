@@ -53,6 +53,7 @@ def print_groups(groups)
 	x += 1
 end
 end
+
 # 4. Refactored Solution
 #I could rewrite my entire code to function differently, but as it stands, I do not believe I can make it more efficient.
 #I chose to use .sample, and as such it has to function this way to make three different sets of groups (units) using the same
@@ -69,7 +70,7 @@ answer = accountability_groups(students)
 p answer.flatten.include?("Gregory Piccolo") #i'm there
 p answer[0][0].size == 5 #Groups are made of 5 until number of remaining students is divisable by 4
 
-print_groups(answer)
+#print_groups(answer)
 
 
 # 5. Reflection 
