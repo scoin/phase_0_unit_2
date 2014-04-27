@@ -44,8 +44,8 @@ def my_hash_sorting_method(source)
 end
 
 # Identify and describe the ruby method you implemented. 
-# In the array sort, I first used .map to convert the fixnums to strings, as they cannot be compared. Then I used .sort of .uniq,
-# as the driver code wanted it this way.
+# In the array sort, I first used .map! to convert the fixnums to strings, as they cannot be compared. Then I used .sort of .uniq,
+# as the driver code did not want duplicates in the sorted string, which in this case would be "I"
 # For sorting the hash, I simply sorted by value which is age in this case.
 #
 
@@ -79,8 +79,8 @@ p my_array_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "on
 p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
-# 
+# As person 3, this was an easy challenge. Ruby's .sort is efficient and makes it very easy to control the data.
+# I am looking forward to my group's work and fully completing this assignment. 
 # 
 # 
 # 
