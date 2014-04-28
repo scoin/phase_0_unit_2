@@ -48,12 +48,11 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  source.map! do |x| x.to_s end
-  source.uniq.sort
+  source.map { |x| x.to_s }.uniq.sort
 end
 
 def my_hash_sorting_method(source)
-  source = source.sort_by { |key, value| value }
+  source.sort_by { |key, value| value }
 end
 
 # Identify and describe the ruby method you implemented. 
