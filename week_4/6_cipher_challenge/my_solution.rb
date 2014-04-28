@@ -3,8 +3,6 @@
 
 # I worked on this challenge with: Jeffrey Kynaston.
 
-
-
 # 1. Solution
 # Write your comments on what each thing is doing. 
 # If you have difficulty, go into IRB and play with the methods.
