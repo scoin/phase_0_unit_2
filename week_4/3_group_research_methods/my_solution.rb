@@ -33,7 +33,6 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  result = []
   source.each_with_index do |element, i|
     source[i] += thing_to_modify if element.is_a?(Numeric)
     end
