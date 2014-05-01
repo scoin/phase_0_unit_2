@@ -9,7 +9,7 @@ STATE_DATA = {  "Alabama" => {population_density: 94.65, population: 4822023, re
                 "California" => {population_density: 244.2, population: 38041430, region: 9, regional_spread: 8},
                 "Colorado" => {population_density: 49.33, population: 5187582, region: 8, regional_spread: 6},
                 "Connecticut" => {population_density: 741.4, population: 3590347, region: 1, regional_spread: 2},
-                "Deleware" => {population_density: 470.7, population: 917092, region: 3, regional_spread: 2},
+                "Delaware" => {population_density: 470.7, population: 917092, region: 3, regional_spread: 2},
                 "Florida" => {population_density: 360.2, population: 19317568, region: 3, regional_spread: 5},
                 "Georgia" => {population_density: 172.5, population: 9919945, region: 3, regional_spread: 5},
                 "Hawaii" => {population_density: 216.8, population: 1392313, region: 11, regional_spread: 9},
