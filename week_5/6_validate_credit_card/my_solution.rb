@@ -8,6 +8,12 @@
 # Input: a credit card number
 # Output: true or false depending if cc holds to algorithm
 # Steps:
+#initialize with cc number
+#throw error if not 16 digits (should be 15 also for AMEX, feature to be added)
+#map cc num to array from reverse, multiplying odd indexed numbers * 2 and leaving
+#even indexed numbers unaltered
+#Sum the mapped array, splitting digits over 9 and summing them
+#Check is total sum % 10 is 0
 
 
 # 3. Initial Solution
@@ -30,7 +36,6 @@ cc_array = @ccnum.to_s.split('').reverse.map.with_index {|d, i|
 	elsif i.even? 
 		d.to_i 
 	end
-
 }.reverse! # doesn't need to be here, but I feel like I want it in the right order even though we're just summing it
 
 cc_array.each {|i| 

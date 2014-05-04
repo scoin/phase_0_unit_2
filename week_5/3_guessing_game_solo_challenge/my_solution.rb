@@ -17,7 +17,7 @@
 
 
 # 3. Initial Solution
-
+=begin
 class GuessingGame
   def initialize(answer)
     @answer = answer
@@ -44,14 +44,30 @@ class GuessingGame
   end
   end
 end
-
+=end
 
 
 
 # 4. Refactored Solution
 
+class GuessingGame
+  def initialize(answer)
+    @answer = answer
+  end
 
-
+  def solved?
+   @lastguess == @answer
+  end
+  
+  def guess(num)
+    @lastguess = num
+    return :low if num < @answer
+  
+    return :high if num > @answer
+    
+   return :correct if num == @answer
+  end
+end
 
 
 
@@ -76,3 +92,13 @@ end
 =end
 
 # 5. Reflection 
+=begin
+This challenge really cemented the use of instance variables for me.
+I was unsure about their initialization outside of the initialize 
+function. When refactoring, I also implemented the use of a test
+in the solved? method, rather than a boolean variable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnh
+
+I am unsure why we are returning symbols - maybe just for readability
+sake? Why not ints or strings or some other data type?
+
+=end
