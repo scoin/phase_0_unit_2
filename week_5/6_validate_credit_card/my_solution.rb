@@ -23,7 +23,7 @@
 class CreditCard
 
 def initialize(ccnum)
-	raise ArgumentError.new "CC must be 16 Digits" if ccnum.to_s.length != 16
+	raise ArgumentError.new "CC must be 16 Digits" if ccnum.length != 16
 	@ccnum = ccnum
 end
 
@@ -64,6 +64,8 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+
+c = CreditCard.new(440804123456783333)
 
 c = CreditCard.new(4408041234567893)
 
