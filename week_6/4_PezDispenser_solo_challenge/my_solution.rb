@@ -16,16 +16,45 @@
 
 # 2. Pseudocode
 
+#needed methods
+#initialize 
+	#input - shuffled colors array
+#see_all_pez
+	#output - colors array
+#add_pez
+	#input - string
+	#output - success message
+#pez_count
+	#output - colors array size
+#get_pez
+	#output - message, manipulated array
 
 
 # 3. Initial Solution
 
 class PezDispenser
  
-# your code here!
- 
+def initialize(flavors)
+@pez = flavors
 end
- 
+
+def see_all_pez
+@pez
+end
+
+def add_pez(type)
+@pez.push(type)
+end
+
+def pez_count
+@pez.count
+end
+
+def get_pez
+@pez.shift
+end
+end
+
 
 
 # 4. Refactored Solution
@@ -37,19 +66,29 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+def assert
+raise ArgumentError.new unless yield
+end
+
 flavors = %w(cherry chocolate cola grape lemon orange peppermint raspberry strawberry).shuffle
 super_mario = PezDispenser.new(flavors)
+assert {super_mario}
 puts "A new pez dispenser has been created. You have #{super_mario.pez_count} pez!"  
+assert {super_mario.pez_count == 9}
 puts "Here's a look inside the dispenser:"  
 puts super_mario.see_all_pez 
 puts "Adding a purple pez."
 super_mario.add_pez("purple")   # mmmmm, purple flavor
+assert {super_mario.see_all_pez.include?('purple')}
 puts "Now you have #{super_mario.pez_count} pez!"
+assert {super_mario.pez_count == 10}
 puts "Oh, you want one do you?"
 puts "The pez flavor you got is: #{super_mario.get_pez}"
 puts "Now you have #{super_mario.pez_count} pez!"
 
 
-
-
 # 5. Reflection 
+#Fun one, but I find myself wishing for a deeper challenge. 
+#There is some great stuff in here that I will be using - such as %w, and in learning that,
+#learned %q. I also cemented #shift - I knew that I needed it, but I couldn't remember if it 
+#was #shift or #unshift.
