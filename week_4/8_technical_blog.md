@@ -10,11 +10,11 @@
 - Explain a methodology for deciding which data structure/ loop/ or language to use in a particular scenario
 
 
-## Release 0:
+## Release 0: New file
 Copy your blog tempate into a new HTML file named `week4_technical.html`. 
 
 
-## Release 1:
+## Release 1: Research a Topic
 ### Option 1: Teach about Enumerable Methods
 Select one of the ruby methods below, do some research on it, and think of a scenario that could teach how to use this method. Then write a blog that explains how it works (and what it works on) using that scenario. Be sure to include samples of code in your blog! It's good for people to see what you are talking about. 
 
@@ -37,7 +37,7 @@ Write this blog for an audience of newb programmers.
 
 
 ## Release 2: Submission
-Link to your blog on the index of your github.io site and sync your changes. 
+Link to your blog on the index of your github.io site and commit and push your changes to GitHub. 
 
 Share your blog on the google+ community under "Blog Posts!" Read others blogs. What did you like about them? 
 
